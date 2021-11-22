@@ -7,27 +7,27 @@
             "type": "Package",
             "regexp": "package ",
             "replacement": "",
-            "matchpath": "go/pkg/.*"
+            "matchpath": "docs/pkg/.*"
         },
         "h3": [{
             "type": "Type",
             "regexp": "type.*?(\\w+)\\s¶.*",
             "requiretext": "type",
             "replacement": "$1",
-            "matchpath": "go/pkg/.*"
+            "matchpath": "docs/pkg/.*"
         },{
             "type": "Function",
             "regexp": "func.*?(\\w+)\\s¶.*",
             "requiretext": "func",
             "replacement": "$1",
-            "matchpath": "go/pkg/.*"
+            "matchpath": "docs/pkg/.*"
         }],
         "h4": {
             "type": "Function",
             "regexp": "func.*?(\\w+)\\s¶.*",
             "requiretext": "func",
             "replacement": "$1",
-            "matchpath": "go/pkg/.*"
+            "matchpath": "docs/pkg/.*"
         }
     },
     "ignore": [
