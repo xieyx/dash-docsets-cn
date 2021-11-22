@@ -1,0 +1,81 @@
+{
+    "name": "Go",
+    "package": "Go",
+    "index": "main.html",
+    "selectors": {
+        "h2": {
+            "type": "Package",
+            "regexp": "package ",
+            "replacement": "",
+            "matchpath": "go/pkg/.*"
+        },
+        "h3": [{
+            "type": "Type",
+            "regexp": "type.*?(\\w+)\\s¶.*",
+            "requiretext": "type",
+            "replacement": "$1",
+            "matchpath": "go/pkg/.*"
+        },{
+            "type": "Function",
+            "regexp": "func.*?(\\w+)\\s¶.*",
+            "requiretext": "func",
+            "replacement": "$1",
+            "matchpath": "go/pkg/.*"
+        }],
+        "h4": {
+            "type": "Function",
+            "regexp": "func.*?(\\w+)\\s¶.*",
+            "requiretext": "func",
+            "replacement": "$1",
+            "matchpath": "go/pkg/.*"
+        }
+    },
+    "ignore": [
+        "返回首页",
+        "Syntax",
+        "Examples",
+        "Index ¶",
+        "Introduction ¶",
+        "Typed Strings ¶",
+        "Contexts ¶",
+        "A fuller picture ¶",
+        "Examples ¶",
+        "Variables ¶",
+        "Bugs ¶",
+        "Errors ¶",
+        "Syntax ¶",
+        "Transactions ¶",
+        "Queries ¶",
+        "The PropertyLoadSaver Interface ¶",
+        "Structured Properties ¶",
+        "Properties ¶",
+        "Basic Operations ¶",
+        "Nested template definitions ¶",
+        "Associated templates ¶",
+        "Pipelines ¶",
+        "Arguments ¶",
+        "Actions ¶",
+        "Directories ¶",
+        "Main ¶",
+        "Subtests 和 Sub-benchmarks ¶",
+        "Benchmarks ¶",
+        "Environment Variables ¶",
+        "Security Model ¶",
+        "Basics ¶",
+        "Printing ¶",
+        "Scanning ¶",
+        "Go Path ¶",
+        "Encoding Details ¶",
+        "Build Constraints ¶",
+        "Binary-Only Packages ¶",
+        "Functions ¶",
+        "Binary-Only Packages ¶",
+        "Package Files\n  ¶",
+        "Variables¶",
+        "Types and Values ¶",
+        "Constants ¶"
+    ],
+    "icon32x32": "go.png",
+    "allowJS": true,
+    "ExternalURL": ""
+}
